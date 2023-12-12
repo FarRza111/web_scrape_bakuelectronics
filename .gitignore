@@ -1,0 +1,8 @@
+/venv
+.mypy_cache
+mydata.xlsx
+_data_.xlsx
+modularscraper.py
+_orgmodular.py
+.idea/
+.DS_Store
