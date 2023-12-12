@@ -1,8 +1,25 @@
 import requests
+import abc
 from _common import *
+from dataclasses import dataclass
+from abc import ABC, abstractmethod
+
+class MyABC(ABC):
+
+    @abstractmethod
+    def get_soup(self):
+        pass
+
+    @abstractmethod
+    def process_soup(self):
+        pass
+
+    def scrape(self):
+        pass
 
 
-class Scraper:
+
+class Scraper(MyABC):
 
     def __init__(self, url, headers):
         self._url = url
@@ -43,6 +60,11 @@ class Scraper:
 
     def __str__(self):
         return f'{self._url}{self._headers}'
+
+    def scrape(self):
+        pass
+
+
 
 
 if __name__ == "__main__":
