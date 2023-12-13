@@ -1,7 +1,6 @@
 import requests
-
-from _common import fetch_page, form_soup
 import unittest
+from _common import fetch_page, form_soup
 from unittest.mock import patch
 
 
