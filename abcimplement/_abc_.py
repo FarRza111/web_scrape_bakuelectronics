@@ -2,8 +2,8 @@ import abc
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
 
-class MyABC(ABC):
 
+class MyABC(ABC):
     @abstractmethod
     def get_soup(self):
         pass
@@ -14,4 +14,3 @@ class MyABC(ABC):
 
     def scrape(self):
         pass
-
